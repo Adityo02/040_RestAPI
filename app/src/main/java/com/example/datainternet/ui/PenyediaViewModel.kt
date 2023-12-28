@@ -8,6 +8,7 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.datainternet.KontakApplication
+import com.example.datainternet.ui.home.viewmodel.InsertViewModel
 import com.example.datainternet.ui.viewmodel.HomeViewModel
 
 object PenyediaViewModel {
@@ -15,6 +16,9 @@ object PenyediaViewModel {
     val Factory = viewModelFactory {
         initializer {
             HomeViewModel(aplikasiKontak().container.kontakRepository)
+        }
+        initializer {
+            InsertViewModel(aplikasiKontak().container.kontakRepository)
         }
     }
 }
