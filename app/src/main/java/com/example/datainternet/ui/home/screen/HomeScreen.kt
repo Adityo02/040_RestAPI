@@ -32,8 +32,10 @@ import com.example.datainternet.R
 import com.example.datainternet.ui.viewmodel.KontakUIState
 
 @Composable
-fun HomeScreen(
-    kontakUIState: KontakUIState, retryAction: () -> Unit, modifier: Modifier = Modifier
+fun HomeStatus(
+    kontakUIState: KontakUIState,
+    retryAction: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
 
     when (kontakUIState) {
