@@ -78,4 +78,7 @@ fun TopAppBarKontak(
             style = MaterialTheme.typography.headlineSmall
         )
     },
+    modifier = modifier,
+    scrollBehavior = scrollBehavior,
+    navigationIcon = {}
 )}
