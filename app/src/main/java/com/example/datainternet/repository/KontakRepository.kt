@@ -5,6 +5,7 @@ import com.example.datainternet.service_api.KontakService
 
 interface KontakRepository {
     suspend fun getKontak(): List<Kontak>
+    suspend fun deleteKontak(id: Int): Boolean
 }
 
 class NetworkKontakRepository(
